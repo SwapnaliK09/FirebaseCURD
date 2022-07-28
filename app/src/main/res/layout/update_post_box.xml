@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#d3d3d3"
+    tools:context=".activity.UserCreatePostActivity">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/purple_700"
+            android:text="Update Post" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/create_post"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_title"
+            android:layout_margin="10dp"
+            android:hint="Update Your Post"
+            android:padding="5dp"
+            android:textAlignment="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_update_post"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+        android:gravity="center"
+    android:layout_below="@+id/create_post"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_update_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/create_post"
+            android:layout_margin="20dp"
+            android:background="@color/teal_700"
+            android:text="Update"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/create_post"
+            android:layout_margin="20dp"
+            android:background="@color/teal_700"
+            android:text="Cancel"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+</LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
